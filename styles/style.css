@@ -1,6 +1,22 @@
 @charset "UTF-8";
 
-/* 
-    #49a09d
-    #5f2c82
-*/
+:root {
+    --cor01: #3264A6;
+    --cor02: #4586BF;
+    --cor03: #11B4D9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    height: 100vh;
+    background-color: var(--cor02);
+}
+
+main {
+    background-color: white;
+}
