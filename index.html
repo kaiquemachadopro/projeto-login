@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 768px)">
     <title>Login</title>
 </head>
 <body>
@@ -12,17 +14,27 @@
             <div id="image">
 
             </div>
-            <div id="form">
+            
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para cessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                
-                <form action="login.php" method="post" autocomplete="on">
-                    <p>
-                        <label for="email"></label>
-                        <input type="email" name="email" id="email" required>
-                    </p>
-                </form>
-            </div>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+  
+                <div id="login-container">
+                    <form action="login.php" method="post" autocomplete="on">
+                        <div class="input-container">
+                                <label for="email"><i class="fa-solid fa-user"></i></span></label>
+                                <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="password"><i class="fa-solid fa-key"></i></label>
+                            <input type="password" name="password" id="password" min="8" max="20" placeholder="Insira sua senha" required>
+                        </div>
+                        <div class="submit-container">
+                            <input type="submit" value="Entrar">
+                        </div>
+                        <div class="forget-key-container">
+                        <input type="button" value="Esqueci minha senha"></div>
+                    </form>
+                </div>
         </section>
     </main>
 </body>

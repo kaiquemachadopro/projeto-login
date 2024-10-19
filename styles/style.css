@@ -1,20 +1,25 @@
 @charset "UTF-8";
 
+/* variables section */
 :root {
     --cor1: #49a09d;
     --cor2: #5f2c82;
+    --cor3: #aafdfa;
 }
 
+/* reset */
 * {
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* background */
 body, html {
     background-color: var(--cor2);
 }
 
+/* main content */
 main {
     position: absolute;
     top: 50%;
@@ -25,6 +30,7 @@ main {
     
     background-color: white;
     border-radius: 10px;
+    box-shadow: 1px 0px 20px 0px black;
 }
 
 main > section > div#image {
@@ -33,21 +39,88 @@ main > section > div#image {
 
     background: black url("/images/metal.jpg") no-repeat fixed left bottom;
     background-size: cover;;
+
+    border-radius: 10px 10px 0px 0px;
 }
 
-main > section > div#form > h1 {
+main > section > h1 {
     text-align: center;
     padding-top: 10px;
 }
 
-main > section > div#form > p {
+main > section > p {
     text-align: left;
-    padding: 10px 10px 5px 10px;
+    padding: 10px 10px 15px 10px;
 }
 
-input#email {
-    display: block;
-    margin: auto;
+/* form */
+div#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.input-container {
+    background-color: var(--cor2);
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+i {
+    font-size: 20px;
+    color: white;
+    padding: 0px 8px 0px 8px;
+}
+
+div.input-container > input {
     padding: 10px;
-    width: 300px;
+    width: 290px;
+    border: none;
+    border-radius: 5px;
+    
+    background-color: var(--cor3);
+}
+
+/* login button */
+div.submit-container > input {
+    padding: 10px;
+    width: 360px;
+
+    font-size: 1em;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    background-color: var(--cor1);
+}
+
+div.submit-container > input:hover {
+    cursor: pointer;
+    background-color: #367573;
+    transition: 0.3s;
+}
+
+/* forgot my password button */
+div.forget-key-container > input {
+    padding: 10px;
+    width: 360px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+    font-size: 1em;
+
+    border: 1px solid var(--cor1);
+    border-radius: 5px;
+
+    color: var(--cor1);
+    background-color: white;
+}
+
+div.forget-key-container > input:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #367573;
+    transition: 0.3s;
 }
