@@ -1,1 +1,47 @@
 @charset "UTF-8";
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 800px;
+    height: 350px;
+    
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 0px 20px 0px black;
+}
+
+main > section > div#image {
+    display: flex;
+    float: right;
+
+    width: 300px;
+    height: 352px;
+
+    background: black url("/images/metal.jpg") no-repeat fixed left bottom;
+    background-size: cover;
+
+    border-radius: 0px 10px 10px 0px;
+}
+
+main > section > h1 {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+main > section > p {
+    text-align: left;
+    padding: 10px 10px 15px 10px;
+}
+
+div#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+}
