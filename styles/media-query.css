@@ -9,11 +9,13 @@ Desktop: 992px up to 1200px
 Large screens: above 1200px
 */
 
+/* variables section */
 :root {
     --cor1: #49a09d;
     --cor2: #5f2c82;
 }
 
+/* tablet settings */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to top, var(--cor1), var(--cor2));
@@ -35,6 +37,7 @@ Large screens: above 1200px
     }
 }
 
+/* desktop and large screens settings */
 @media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, var(--cor1), var(--cor2));
