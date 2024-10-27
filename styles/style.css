@@ -91,7 +91,7 @@ div.field > span {
     width: 40px;
     padding: 5px;
 
-    font-size: 2em;
+    font-size: 1.9em;
 
     color: white;
 }
@@ -112,6 +112,7 @@ div.field > input {
 
 div.field > input:focus-within {
     background-color: white;
+    border: none;
 }
 
 /* button settings */
